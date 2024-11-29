@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Riding Association</title>
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Full background image */
+        body {
+            background: url('https://source.unsplash.com/1600x900/?motorcycle,bike') no-repeat center center/cover;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 2em 1em;
+            background: rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            animation: fadeIn 2s ease-out 1s;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff5c5c;
+            transform: scale(1.1);
+        }
+
+        /* Section styles */
+        section {
+            text-align: center;
+            padding: 4em 2em;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 2em auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+            animation: slideIn 1s ease-out;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.8em;
+        }
+
+        .events ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .events li {
+            font-size: 1.1em;
+            margin: 0.5em 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: rgba(0, 0, 0, 0.9);
+            margin-top: 2em;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bike Riding Association</h1>
+        <p>Join the revolution of riding together.</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to the Bike Riding Association</h2>
+        <p>We are dedicated to fostering a community of biking enthusiasts, promoting health, and embracing adventure on two wheels.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 2015, the Bike Riding Association is a hub for all cycling lovers. Whether you're a casual rider or a pro cyclist, our association offers support, events, and a platform to connect with fellow riders. We believe in the power of biking to bring people together, improve fitness, and protect the environment.</p>
+    </section>
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>Mountain Trail Ride</strong> - March 20, 2024</li>
+            <li><strong>City Marathon</strong> - April 15, 2024</li>
+            <li><strong>Bike to Work Day</strong> - May 30, 2024</li>
+        </ul>
+    </section>
+    <section id="membership">
+        <h2>Membership Benefits</h2>
+        <p>Join our association and enjoy exclusive perks, including:</p>
+        <ul>
+            <li>Free participation in events.</li>
+            <li>Access to our premium bike trails.</li>
+            <li>Monthly newsletters with tips and updates.</li>
+            <li>Discounts at partner bike shops.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@bikeridingassociation.com</p>
+        <p>Phone: +1 123 456 7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Bike Riding Association. All rights reserved.</p>
+    </footer>
+</body>
+</html>
